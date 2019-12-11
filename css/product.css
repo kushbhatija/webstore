@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+:root{
+  --asap-font: 'Asap', sans-serif;
+  --anton-h-font: 'Anton', sans-serif;
+
+  --nav-color-3: #F2E205;
+  --bg-color--light-blue:#DCEAF2;
+  --links: #25C7D9;
+  --pink: #F266A7;
+  --light-purple: #F29BC4;
+}
+
+.dropdown-content{
+  font-size: 1.5em;
+  list-style-type: none;
+  color: green;
+  text-decoration: none;
+}
+
+
+
+.topbar{
+  display: grid;
+  grid-template-areas: 0.5fr 1fr 0.5fr;
+  grid-template-areas: 
+  "hmbrbtn heading nav";
+  top: 0;
+  padding-top: 0;
+  font-family: var(-asap-font);
+  border-bottom: thin solid black;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  
+}
+
+.navigation{
+  grid-area: nav;
+}
+
+.mainmenu{
+  display:grid;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr ;
+  list-style: none;
+  font-family: var(--asap-font);
+}
+
+.nav-button{
+  text-decoration: none;
+  color: black;
+  
+}
+.nav-button:hover{
+  color: lightgray;
+}
+.hamburger{
+  grid-area: hmbrbtn;
+  line-height: 2.5;
+  border: none;
+  padding-top: 0.5em;
+}
+.hamburger:hover{
+  color:gray;
+  
+}
+
+
+.search{
+  visibility: hidden;
+}
+
+.search-box{
+ 
+  visibility:  hidden;
+}
+
+
+
+strong{
+  color: var(--light-purple);
+}
+
+ul{
+  line-height: 200%;
+}
+
+h1{
+  font-size: 2em;
+  font-family: var(--anton-h-font);
+}
+
+h2{
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-family: var(--anton-h-font);
+}
+
+.product-dt2008{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 6em;
+  font-family: var(--asap-font);
+}
+
+.product{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 2em;
+  grid-template-areas:
+  "main main main"
+  "side1 side2 side2";
+  font-family: var(--asap-font);
+  
+}
+
+.warranty{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--links);
+}
+
+.warranty:hover{
+  zoom: 1.5;
+  transition-delay: 1.5ms;
+  text-decoration: underline;
+}
+.main-img{
+  grid-area: main;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+
+}
+
+ .side-img-1{
+  grid-area: side1;
+  padding-left: 3em;
+
+}
+
+.side-img-1:hover{
+  
+  cursor: pointer;
+}
+.side-img-2{
+  grid-area: side2;
+  padding-right: 3em;
+}
+.side-img-2:hover{
+ 
+  cursor: pointer;
+}
+  
+
+.info{
+  list-style: none;
+  font-size: 1.2em;
+  
+}
+
+.bagbtn{
+  z-index: -99;
+  font: 1em helvetica, sans-serif;
+  background-color: #ccc;
+  color: black;
+  width: 3em;
+  height: em;
+  padding: 0.375em 0;
+  text-align: center;
+  border: thin solid #ddd;
+  border-radius: 1.5em;
+  position: relative;
+}
+
+
+.bagbtn img{
+  z-index: -99;
+  height: 1.5em;
+  z-index: -111;
+}
+
+
+.num {
+  z-index: -99;
+  background-color: gold;
+  padding: 0.125em;
+  border-radius: 0.5em;
+  display: inline-block;
+  position: absolute;
+  bottom: -0.25em;
+  left: -0.25em;
+}
+
+.details{
+  padding-top: 2em;
+  text-align: center;
+  font-size: 2em;
+}
+
+.specs{
+  font-size: 1.1em;
+  font-family: var(--asap-font);
+  list-style-type: none;
+  text-align: left;
+}
+
+.recommended{
+  margin-left: 0.5em;
+ 
+}
+
+.other-watches{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  border: thin solid gray;
+  padding-left: 5em;
+  background-color: lightgray;
+}
+
+.rec-watch:hover{
+  cursor: pointer;
+  zoom: 10;
+  border: solid thin var(--links);
+}
+
+.side-img{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+footer{
+  margin-top: 10em;
+  position: relative;
+  background-color: #232F3E;
+  color: whitesmoke;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.connect{
+  text-align: center;
+  font-family: var(--spicemen-font);
+}
+.socialmedia{
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+}
+.media:hover{
+  zoom: 1.3;
+  transition-delay: .6ms;
+}
+.policies{
+
+  list-style: none;
+  font-family: var(--asap-font);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  padding-bottom: 1.5em;
+  border: thin solid white;
+}
+.policy{
+  
+  color: whitesmoke;
+  text-decoration: none;
+  margin-top: 1em;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+}
+.policy:hover{
+  color: var(--links);
+  margin-left: 1em;
+  margin-right: 1em;
+
+}
+hr.seperate-line{
+  border-top: 1px solid white;
+}
+
+.footer-headlines{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-top: 1.2em;
+  font-size: 2em;
+  font-style: normal;
+}
+
+.footer-subheadings{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  font-size: 1.2em;
+  font-family: var(--asap-font);
+}
+
+.subheading{
+  text-decoration: none;
+  color: white;
+}
+.subheading:hover{
+  color: var(--links);
+  zoom: 1.3;
+  transition-delay: .6ms;
+}
+
+
+
+
+.copyright{
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .topbar{
+    padding-bottom:2em
+  }
+  .title{
+    font-size: 1.5em;
+  }
+
+    .main-img{
+      padding-top: 4em;
+      padding-left: 3em;
+    }
+    .product-dt2008{
+      grid-template-columns: 1fr;
+    }
+    .side-img-1{
+
+      padding-bottom: 2em;
+    }
+
+    h1{
+      font-size: 1em;
+      text-align: left;
+      padding-left: 2em;
+    }
+
+    .ratings{
+      padding-left: 2em;
+    }
+    .specs{
+      font-size: 0.8em;
+    }
+
+    .details{
+      font-size: 2em;
+    }
+
+    .footer-headlines{
+      font-size: 1em;
+      position: relative;
+      grid-gap: 1em;
+    }
+  
+    .subheading{
+      position: relative;
+      grid-gap: 1em;
+      left: 0;
+    }
+    .other-watches{
+      grid-template-columns: 1fr;
+      width: 60%;
+      background-color: white;
+      border: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+  .specs{
+    font-size: 0.5em;
+  
+  }
+
+  h1{
+    font-size: 1em;
+  
+  }
+
+  .mainmenu{
+    margin-bottom:2em;
+    text-align: center;
+    font-size: 1em;
+    position: fixed;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    top: 5em;
+    right: 7em;
+    background-color: #232F3E;
+    color: white;
+    width: 100%;
+    right: 0;
+  }
+  .footer-headlines{
+    font-size: 1em;
+    position: relative;
+    grid-gap: 1em;
+  }
+
+  .subheading{
+    position: relative;
+    grid-gap: .2em;
+    left: 0;
+    font-size: .5em;
+  }
+}
