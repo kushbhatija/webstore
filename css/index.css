@@ -100,15 +100,17 @@ footer{
 }
 
 .dropdown-content{
-  font-size: 1.5em;
   list-style-type: none;
   color: green;
   text-decoration: none;
 }
 
+
+
 .show {display: block};
 
 .option{
+  
   list-style-type: none;
   color:blue;
   text-decoration: none;
@@ -347,7 +349,9 @@ hr.seperate-line{
   transition-delay: .6ms;
 }
 
-
+.adshoe{
+  margin-top: 9em;
+}
 
 
 .copyright{
